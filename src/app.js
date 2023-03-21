@@ -7,16 +7,21 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  let pronoun = ["the"];
-  let adj = ["great"];
-  let noun = ["jogger"];
+  document.getElementById("dominio").innerHTML = generadorDominio;
+  let generadorDominio = "";
 
-  for (let i = 0; (i = pronoun.length); i++) {
-    for (let j = 0; j < adj.length; j++) {
-      for (let k = 0; noun < adj.length; k++) {
-        console.log(pronoun[i] + adj[j] + adj[k]);
+  let pronoun = ["the", "our"];
+  let adj = ["great", "big"];
+  let noun = ["jogger", "racoon"];
+
+  for (let i = 0; i <= pronoun.length - 1; i++) {
+    for (let j = 0; j <= adj.length - 1; j++) {
+      for (let k = 0; k <= noun.length - 1; k++) {
+        {
+          generadorDominio += pronoun[i] + adj[j] + noun[k] + "</br>";
+        }
       }
     }
   }
-  console.log("Hello Rigo from the console!");
+  document.getElementById("dominio").innerHTML = generadorDominio;
 };
