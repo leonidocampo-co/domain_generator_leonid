@@ -18,7 +18,7 @@ window.onload = function() {
     for (let j = 0; j <= adj.length - 1; j++) {
       for (let k = 0; k <= noun.length - 1; k++) {
         {
-          generadorDominio += pronoun[i] + adj[j] + noun[k] + "</br>";
+          generadorDominio += pronoun[i] + adj[j] + noun[k] + ".com" + "</br>";
         }
       }
     }
